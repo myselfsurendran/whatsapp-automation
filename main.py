@@ -1,5 +1,5 @@
 import pandas as pd
-import schedule
+#import schedule
 import time
 from datetime import datetime
 import subprocess
@@ -16,6 +16,7 @@ def get_place_for_today():
         mapping_df = pd.read_excel(DAY_PLACE_MAPPING_FILE_PATH)  # Or pd.read_csv
         print(mapping_df)
         place_row = mapping_df[mapping_df['Date'] == today_date]  # Assuming 'Date' column
+        print(place_row )
         if not place_row.empty:
             return place_row['Place Name'].iloc[0]  # Assuming 'Place Name' column
         else:
