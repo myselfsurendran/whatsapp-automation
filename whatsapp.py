@@ -30,20 +30,51 @@ with open('groups.txt', 'r', encoding='utf8') as f:
     groups = f.readlines()
 
 
-chrome_options = Options()
-chrome_options.add_argument(f"user-data-dir={CHROMEDRIVER_PATH}")  # Path to your user data
-chrome_options.add_argument(f"profile-directory={CHROME_PROFILE_NAME}")  # Specify the profile you want to use
+# --- Headless Mode Configuration ---
 
-chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-chrome_options.add_argument("--headless")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--headless")
 
-# Create a Service object
-service = Service(DRIVER_PATH)
+options.add_argument("--no-sandbox")
 
-# Initialize the WebDriver with the Service object and Chrome options
-browser = webdriver.Chrome(service=service, options=chrome_options)
+options.add_argument("--disable-dev-shm-usage")
+
+options.binary_location = '/usr/bin/chromium-browser' # Explicitly set Chromium location
+
+# --- End of Headless Mode Configuration ---
+
+
+
+# Initialize Chrome webdriver
+
+try:
+
+    service = Service('/usr/bin/chromedriver') # Explicitly set ChromeDriver location
+
+    browser = webdriver.Chrome(service=service, options=options)
+
+except Exception as e:
+
+    print(f"Error initializing ChromeDriver with explicit path: {e}")
+
+    try:
+
+        browser = webdriver.Chrome(options=options) # Try without explicit service
+
+    except Exception as e2:
+
+        print(f"Error initializing ChromeDriver without Service: {e2}")
+
+        try:
+
+            service = Service(ChromeDriverManager().install()) # Try with webdriver-manager
+
+            browser = webdriver.Chrome(service=service, options=options)
+
+        except Exception as e3:
+
+            print(f"Error initializing ChromeDriver with ChromeDriverManager: {e3}")
+
+            raise
 
 browser.maximize_window()
 
