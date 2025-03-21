@@ -4,9 +4,9 @@ import os
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 #CHROME_USER_DATA_DIR = r"C:\Users\imsur\AppData\Local\Google\Chrome\User Data" #use the correct path
-CHROME_USER_DATA_DIR = r"C:\Users\Administrator\AppData\Local\Google\Chrome\User Data"
-CHROME_PROFILE_NAME = "Profile 15"  # Specify the profile you want to use
-DRIVER_PATH = "C:\\Users\\Administrator\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe"  # Use the correct path
+CHROME_USER_DATA_DIR = os.path.expanduser("~/.config/chromium/User Data")
+CHROME_PROFILE_NAME = "Default"  # Specify the profile you want to use
+#DRIVER_PATH = "C:\\Users\\Administrator\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe"  # Use the correct path
 
 # Data files
 DAY_PLACE_MAPPING_FILE_PATH = os.path.join(ROOT_DIR, "Data", "day_place_mapping.xlsx")
