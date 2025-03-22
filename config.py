@@ -4,8 +4,8 @@ import os
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 #CHROME_USER_DATA_DIR = r"C:\Users\imsur\AppData\Local\Google\Chrome\User Data" #use the correct path
-CHROME_USER_DATA_DIR = os.path.expanduser("~/.config/chromium/User Data")
-CHROME_PROFILE_NAME = "Default"  # Specify the profile you want to use
+CHROME_USER_DATA_DIR = os.path.expanduser("~/.config/google-chrome/User Data")
+CHROME_PROFILE_NAME = "Whatsapp"  # Specify the profile you want to use
 #DRIVER_PATH = "C:\\Users\\Administrator\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe"  # Use the correct path
 
 # Data files
@@ -19,5 +19,5 @@ IMAGE_FILE = os.path.join(ROOT_DIR, "Images")
 
 # Gmail related
 SENDER_EMAIL = "violentstudioz@gmail.com"  # Replace with your email address
-SENDER_PASSWORD = ""  # Replace with your email password
+SENDER_PASSWORD = "nevr qgeo qvqd yszp"  # Replace with your email password
 RECEIVER_EMAIL = "zications@gmail.com" # Replace with your email address

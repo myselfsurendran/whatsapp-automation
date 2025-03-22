@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pid
 #import schedule
 import time
 from datetime import datetime
@@ -10,8 +10,8 @@ from config import (
 )
 
 def get_place_for_today():
-    today_date = datetime.now().strftime('%Y-%m-%d')  # Format date as YYYY-MM-DD
-
+    today = datetime.now().strftime('%Y-%m-%d')  # Format date as YYYY-MM-DD
+    today_date = '2025-03-21'
     try:
         mapping_df = pd.read_excel(DAY_PLACE_MAPPING_FILE_PATH)  # Or pd.read_csv
         print(mapping_df)
@@ -46,9 +46,9 @@ def process_and_send_data():
         with open(MESSAGE_FILE, 'w', encoding='utf8') as f:
             f.write(place_data)
 
-        print("Data written to msgs.txt")
+        print("Data written to msg.txt")
 
-        subprocess.run(['python3', 'whatsapp.py', place_name])
+        subprocess.run(['python3', 'whatsapp_script.py', place_name])
         
         print("WhatsApp automation script triggered.")
 
