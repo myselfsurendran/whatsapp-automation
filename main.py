@@ -1,4 +1,4 @@
-import pandas as pid
+import pandas as pd
 #import schedule
 from datetime import datetime
 import subprocess

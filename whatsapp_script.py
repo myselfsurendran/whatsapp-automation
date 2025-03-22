@@ -99,7 +99,7 @@ for group in groups:
     time.sleep(2)
 
     wait = WebDriverWait(browser, 10)  
-    group_element = wait.until(EC.presence_of_element_located((By.XPATH, '//span[@title="{group.strip()}"]')))
+    group_element = wait.until(EC.presence_of_element_located((By.XPATH, f'//span[@title="{group.strip()}"]')))
     group_element.click()
 
     time.sleep(1)
@@ -121,7 +121,7 @@ for group in groups:
         attachment_box.click()
         time.sleep(1)
 
-        image_path = f'{IMAGE_FILE}/{place_name}.jpeg'
+        image_path = f'{IMAGE_FILE}/{place_name}.jpg'
         image_box = browser.find_element(By.XPATH, '//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')
         image_box.send_keys(image_path)
 
