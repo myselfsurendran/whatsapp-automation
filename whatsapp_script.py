@@ -121,7 +121,7 @@ for group in groups:
         attachment_box.click()
         time.sleep(1)
 
-        image_path = f'whatsapp-automation/Images/{IMAGE_FILE}/{place_name}.jpg'
+        image_path = f'{IMAGE_FILE}/{place_name}.jpg'
         image_box = browser.find_element(By.XPATH, '//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')
         image_box.send_keys(image_path)
 
