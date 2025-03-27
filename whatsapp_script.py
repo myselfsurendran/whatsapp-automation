@@ -128,6 +128,7 @@ for group in groups:
         time.sleep(2)
 
         send_btn = browser.find_element(By.XPATH,'//div[@role="button"][@aria-label="Send"]')
+        time.sleep(4)
         send_btn.click()
         time.sleep(4)
 
