@@ -24,10 +24,10 @@ else:
     print("Error: Place name not provided.")
     sys.exit(1)
 
-with open('msg.txt', 'r', encoding='utf8') as f:
+with open('whatsapp-automation/msg.txt', 'r', encoding='utf8') as f:
     msg = f.read()
 
-with open('groups.txt', 'r', encoding='utf8') as f:
+with open('whatsapp-automation/groups.txt', 'r', encoding='utf8') as f:
     groups = [line.strip() for line in f.readlines()]
 
 
@@ -121,7 +121,7 @@ for group in groups:
         attachment_box.click()
         time.sleep(1)
 
-        image_path = f'{IMAGE_FILE}/{place_name}.jpg'
+        image_path = f'whatsapp-automation/{IMAGE_FILE}/{place_name}.jpg'
         image_box = browser.find_element(By.XPATH, '//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')
         image_box.send_keys(image_path)
 
