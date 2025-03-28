@@ -10,11 +10,13 @@ CHROME_PROFILE_NAME = "Whatsapp"  # Specify the profile you want to use
 
 # Data files
 DAY_PLACE_MAPPING_FILE_PATH = os.path.join(ROOT_DIR, "Data", "day_place_mapping.xlsx")
-DATA_FILE_PATH = os.path.join(ROOT_DIR, "Data", "place_with_facts.xlsx")
+DATA_FILE_PATH_ENGLISH = os.path.join(ROOT_DIR, "Data", "place_with_facts_eng.xlsx")
+DATA_FILE_PATH_TAMIL = os.path.join(ROOT_DIR, "Data", "place_with_facts_tam.xlsx")
 
 # Messages
 MESSAGE_FILE = os.path.join(ROOT_DIR, "msg.txt")
 GROUPS_FILE = os.path.join(ROOT_DIR, "groups.txt") # Assuming groups.txt is also in the root
+GROUP_NAME = os.path.join(ROOT_DIR, "group_name.txt")
 IMAGE_FILE = os.path.join(ROOT_DIR, "Images")
 
 # Gmail related
