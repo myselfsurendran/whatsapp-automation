@@ -32,7 +32,7 @@ def get_place_for_today():
         return None
 
 def process_and_send_data():
-    with open('groups.txt', 'r', encoding='utf8') as f:
+    with open('whatsapp-automation/groups.txt', 'r', encoding='utf8') as f:
         groups = [line.strip() for line in f]
 
     for group in groups:
