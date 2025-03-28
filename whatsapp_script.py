@@ -27,7 +27,7 @@ else:
 with open('whatsapp-automation/msg.txt', 'r', encoding='utf8') as f:
     msg = f.read()
 
-with open('whatsapp-automation/groups.txt', 'r', encoding='utf8') as f:
+with open('whatsapp-automation/group_name.txt', 'r', encoding='utf8') as f:
     groups = [line.strip() for line in f.readlines()]
 
 
