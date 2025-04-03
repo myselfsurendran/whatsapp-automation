@@ -64,6 +64,8 @@ def process_and_send_data():
 
             print("Data written to msg.txt")
 
+            print("SUBPROCESS STARTED")
+
             subprocess.run(['python3', 'whatsapp-automation/whatsapp_script.py', place_name])
         
             print("WhatsApp automation script triggered.")
