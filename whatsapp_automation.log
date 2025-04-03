@@ -1,147 +1,54 @@
-python3: can't open file '/home/ubuntu/whatsapp_script.py': [Errno 2] No such file or directory
-         Date                    Place Name
-0  2025-03-21                    Murdeshwar
-1  2025-03-19  Shri Janardhana Swamy Temple
-2  2025-03-20                    Murdeshwar
-3  2025-03-20  Shri Janardhana Swamy Temple
-4  2025-03-21  Shri Janardhana Swamy Temple
-5  2025-03-21  Shri Janardhana Swamy Temple
-6  2025-03-22  Shri Janardhana Swamy Temple
-7  2025-03-22  Shri Janardhana Swamy Temple
-8  2025-03-23  Shri Janardhana Swamy Temple
-9  2025-03-23  Shri Janardhana Swamy Temple
-10 2025-03-24  Shri Janardhana Swamy Temple
-11 2025-03-24  Shri Janardhana Swamy Temple
-        Date                    Place Name
-6 2025-03-22  Shri Janardhana Swamy Temple
-7 2025-03-22  Shri Janardhana Swamy Temple
-Data found for Shri Janardhana Swamy Temple: இனிய காலை வணக்கம் 🌅
+Received place name: Annegudu
+WhatsApp Web loaded successfully (likely logged in).
+Channel page went successfully
+Search box cleared successfully
+Typed the group name in the search box successfully
+Traceback (most recent call last):
+  File "/home/ubuntu/whatsapp-automation/whatsapp_script.py", line 102, in <module>
+    group_element = wait.until(EC.presence_of_element_located((By.XPATH, f'//span[@title="{group.strip()}"]')))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/whatsapp-automation/venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x5f681e2a6ffa <unknown>
+#1 0x5f681dd65970 <unknown>
+#2 0x5f681ddb7385 <unknown>
+#3 0x5f681ddb75b1 <unknown>
+#4 0x5f681de063c4 <unknown>
+#5 0x5f681dddd2bd <unknown>
+#6 0x5f681de0370c <unknown>
+#7 0x5f681dddd063 <unknown>
+#8 0x5f681dda9328 <unknown>
+#9 0x5f681ddaa491 <unknown>
+#10 0x5f681e26e42b <unknown>
+#11 0x5f681e2722ec <unknown>
+#12 0x5f681e255a22 <unknown>
+#13 0x5f681e272e64 <unknown>
+#14 0x5f681e239bef <unknown>
+#15 0x5f681e295558 <unknown>
+#16 0x5f681e295736 <unknown>
+#17 0x5f681e2a5e76 <unknown>
+#18 0x7f0dfd89caa4 <unknown>
+#19 0x7f0dfd929c3c <unknown>
 
-🛡️ கித்தூர் கோட்டை – பெலகாவி, கர்நாடகா
-
-👑 கித்தூர் ராணி சென்னம்மா – பிரிட்டிஷாருக்கு எதிராக போராடிய கர்நாடகாவின் முதல் வீர மங்கையர்! ⚔️🔥
-💔 ஆனால் துரோகிகள் ஆயுத குணப்பொடியில் மாடுச் சாணம் கலக்கி, பிரிட்டிஷாருக்கு எதிரான போரில் கோட்டையை பாதுகாக்க முடியாத நிலை உருவாக்கப்பட்டது. 🏰💥
-📜 1857 போருக்கு முன்னரே, 1824 ஆம் ஆண்டு தனது வீரத்தால் பிரிட்டிஷாருக்கு எதிராக முதல் போரை நடத்தினார்! ⏳🚩
-🎯 முதல் போரில் வெற்றி பெற்று, இரண்டு பிரிட்டிஷ் அதிகாரிகளை சிறையிலடைத்தார்! 🏹🎖️
-
-✨ இந்த வரலாற்று கோட்டைக்கு வரிசென்று பார்வையிட விரும்புகிறரகள?
-📞 பயண ஏற்பாடுகளுக்கு எங்களை தொடர்பு கொள்ளுங்கள் – 6380013636! 🚗
+Received place name: Annegudu
+WhatsApp Web loaded successfully (likely logged in).
+Channel page went successfully
+Search box cleared successfully
+Typed the group name in the search box successfully
+Processing for group: Zi Tours English - Testing
+        Date Place Name
+0 2025-04-03   Annegudu
+Zi Tours English - Testing
+Data found for Annegudu
 Data written to msg.txt
 WhatsApp automation script triggered.
-Script execution finished.
-python3: can't open file '/home/ubuntu/whatsapp_script.py': [Errno 2] No such file or directory
-         Date                    Place Name
-0  2025-03-21                    Murdeshwar
-1  2025-03-19  Shri Janardhana Swamy Temple
-2  2025-03-20                    Murdeshwar
-3  2025-03-20  Shri Janardhana Swamy Temple
-4  2025-03-21  Shri Janardhana Swamy Temple
-5  2025-03-21  Shri Janardhana Swamy Temple
-6  2025-03-22  Shri Janardhana Swamy Temple
-7  2025-03-22  Shri Janardhana Swamy Temple
-8  2025-03-23  Shri Janardhana Swamy Temple
-9  2025-03-23  Shri Janardhana Swamy Temple
-10 2025-03-24  Shri Janardhana Swamy Temple
-11 2025-03-24  Shri Janardhana Swamy Temple
-        Date                    Place Name
-8 2025-03-23  Shri Janardhana Swamy Temple
-9 2025-03-23  Shri Janardhana Swamy Temple
-Data found for Shri Janardhana Swamy Temple: இனிய காலை வணக்கம் 🌅
-
-🛡️ கித்தூர் கோட்டை – பெலகாவி, கர்நாடகா
-
-👑 கித்தூர் ராணி சென்னம்மா – பிரிட்டிஷாருக்கு எதிராக போராடிய கர்நாடகாவின் முதல் வீர மங்கையர்! ⚔️🔥
-💔 ஆனால் துரோகிகள் ஆயுத குணப்பொடியில் மாடுச் சாணம் கலக்கி, பிரிட்டிஷாருக்கு எதிரான போரில் கோட்டையை பாதுகாக்க முடியாத நிலை உருவாக்கப்பட்டது. 🏰💥
-📜 1857 போருக்கு முன்னரே, 1824 ஆம் ஆண்டு தனது வீரத்தால் பிரிட்டிஷாருக்கு எதிராக முதல் போரை நடத்தினார்! ⏳🚩
-🎯 முதல் போரில் வெற்றி பெற்று, இரண்டு பிரிட்டிஷ் அதிகாரிகளை சிறையிலடைத்தார்! 🏹🎖️
-
-✨ இந்த வரலாற்று கோட்டைக்கு வரிசென்று பார்வையிட விரும்புகிறரகள?
-📞 பயண ஏற்பாடுகளுக்கு எங்களை தொடர்பு கொள்ளுங்கள் – 6380013636! 🚗
+Processing for group: Zi Tours Tamil - Testing
+        Date Place Name
+0 2025-04-03   Annegudu
+Zi Tours Tamil - Testing
+Data found for Annegudu
 Data written to msg.txt
 WhatsApp automation script triggered.
-Script execution finished.
-python3: can't open file '/home/ubuntu/whatsapp_script.py': [Errno 2] No such file or directory
-         Date                    Place Name
-0  2025-03-21                    Murdeshwar
-1  2025-03-19  Shri Janardhana Swamy Temple
-2  2025-03-20                    Murdeshwar
-3  2025-03-20  Shri Janardhana Swamy Temple
-4  2025-03-21  Shri Janardhana Swamy Temple
-5  2025-03-21  Shri Janardhana Swamy Temple
-6  2025-03-22  Shri Janardhana Swamy Temple
-7  2025-03-22  Shri Janardhana Swamy Temple
-8  2025-03-23  Shri Janardhana Swamy Temple
-9  2025-03-23  Shri Janardhana Swamy Temple
-10 2025-03-24  Shri Janardhana Swamy Temple
-11 2025-03-24  Shri Janardhana Swamy Temple
-         Date                    Place Name
-10 2025-03-24  Shri Janardhana Swamy Temple
-11 2025-03-24  Shri Janardhana Swamy Temple
-Data found for Shri Janardhana Swamy Temple: இனிய காலை வணக்கம் 🌅
-
-🛡️ கித்தூர் கோட்டை – பெலகாவி, கர்நாடகா
-
-👑 கித்தூர் ராணி சென்னம்மா – பிரிட்டிஷாருக்கு எதிராக போராடிய கர்நாடகாவின் முதல் வீர மங்கையர்! ⚔️🔥
-💔 ஆனால் துரோகிகள் ஆயுத குணப்பொடியில் மாடுச் சாணம் கலக்கி, பிரிட்டிஷாருக்கு எதிரான போரில் கோட்டையை பாதுகாக்க முடியாத நிலை உருவாக்கப்பட்டது. 🏰💥
-📜 1857 போருக்கு முன்னரே, 1824 ஆம் ஆண்டு தனது வீரத்தால் பிரிட்டிஷாருக்கு எதிராக முதல் போரை நடத்தினார்! ⏳🚩
-🎯 முதல் போரில் வெற்றி பெற்று, இரண்டு பிரிட்டிஷ் அதிகாரிகளை சிறையிலடைத்தார்! 🏹🎖️
-
-✨ இந்த வரலாற்று கோட்டைக்கு வரிசென்று பார்வையிட விரும்புகிறரகள?
-📞 பயண ஏற்பாடுகளுக்கு எங்களை தொடர்பு கொள்ளுங்கள் – 6380013636! 🚗
-Data written to msg.txt
-WhatsApp automation script triggered.
-Script execution finished.
-         Date                    Place Name
-0  2025-03-21                    Murdeshwar
-1  2025-03-19  Shri Janardhana Swamy Temple
-2  2025-03-20                    Murdeshwar
-3  2025-03-20  Shri Janardhana Swamy Temple
-4  2025-03-21  Shri Janardhana Swamy Temple
-5  2025-03-21  Shri Janardhana Swamy Temple
-6  2025-03-22  Shri Janardhana Swamy Temple
-7  2025-03-22  Shri Janardhana Swamy Temple
-8  2025-03-23  Shri Janardhana Swamy Temple
-9  2025-03-23  Shri Janardhana Swamy Temple
-10 2025-03-24  Shri Janardhana Swamy Temple
-11 2025-03-24  Shri Janardhana Swamy Temple
-Empty DataFrame
-Columns: [Date, Place Name]
-Index: []
-No place found for date: 2025-03-25 in the mapping sheet.
-Script execution finished.
-         Date                    Place Name
-0  2025-03-21                    Murdeshwar
-1  2025-03-19  Shri Janardhana Swamy Temple
-2  2025-03-20                    Murdeshwar
-3  2025-03-20  Shri Janardhana Swamy Temple
-4  2025-03-21  Shri Janardhana Swamy Temple
-5  2025-03-21  Shri Janardhana Swamy Temple
-6  2025-03-22  Shri Janardhana Swamy Temple
-7  2025-03-22  Shri Janardhana Swamy Temple
-8  2025-03-23  Shri Janardhana Swamy Temple
-9  2025-03-23  Shri Janardhana Swamy Temple
-10 2025-03-24  Shri Janardhana Swamy Temple
-11 2025-03-24  Shri Janardhana Swamy Temple
-Empty DataFrame
-Columns: [Date, Place Name]
-Index: []
-No place found for date: 2025-03-26 in the mapping sheet.
-Script execution finished.
-         Date                    Place Name
-0  2025-03-21                    Murdeshwar
-1  2025-03-19  Shri Janardhana Swamy Temple
-2  2025-03-20                    Murdeshwar
-3  2025-03-20  Shri Janardhana Swamy Temple
-4  2025-03-21  Shri Janardhana Swamy Temple
-5  2025-03-21  Shri Janardhana Swamy Temple
-6  2025-03-22  Shri Janardhana Swamy Temple
-7  2025-03-22  Shri Janardhana Swamy Temple
-8  2025-03-23  Shri Janardhana Swamy Temple
-9  2025-03-23  Shri Janardhana Swamy Temple
-10 2025-03-24  Shri Janardhana Swamy Temple
-11 2025-03-24  Shri Janardhana Swamy Temple
-Empty DataFrame
-Columns: [Date, Place Name]
-Index: []
-No place found for date: 2025-03-27 in the mapping sheet.
 Script execution finished.
