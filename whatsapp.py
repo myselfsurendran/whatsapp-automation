@@ -71,7 +71,7 @@ for group in groups:
 
     try:
         wait = WebDriverWait(browser, 20)
-        group_element = wait.until(EC.presence_of_element_located((By.XPATH, f'//span[contains(text(), "{group.strip()}")]')))
+        group_element = wait.until(EC.presence_of_element_located((By.XPATH, f'//span[@title="Zi Tours English - Testing"]')))
         group_element.click()
         time.sleep(1)
     except Exception:
