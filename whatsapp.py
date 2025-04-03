@@ -68,17 +68,6 @@ for group in groups:
         capture_and_notify("Failed to open the channel page.")
         continue
 
-    try:
-        search_path = '//div[@contenteditable="true"][@data-tab="3"]'
-        search_box = browser.find_element(By.XPATH, search_path)
-        search_box.clear()
-        time.sleep(1)
-        search_box.send_keys(group)
-        print(f"Typed group name: {group}")
-        time.sleep(2)
-    except Exception:
-        capture_and_notify("Failed to search for the group.")
-        continue
 
     try:
         wait = WebDriverWait(browser, 20)
