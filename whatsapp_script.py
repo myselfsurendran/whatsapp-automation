@@ -98,11 +98,6 @@ for group in groups:
 
     time.sleep(2)
 
-    all_spans = browser.find_elements(By.XPATH, '//span')
-    print("Available span texts:")
-    for span in all_spans:
-        print(repr(span.text))  # Print exactly what WhatsApp Web shows
-
     wait = WebDriverWait(browser, 20)  
     group_element = wait.until(EC.presence_of_element_located((By.XPATH, f'//span[contains(text(), "{group.strip()}")]')))
     group_element.click()
