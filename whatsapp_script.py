@@ -98,8 +98,10 @@ for group in groups:
 
     time.sleep(2)
 
-    wait = WebDriverWait(browser, 10)  
-    group_element = wait.until(EC.presence_of_element_located((By.XPATH, f'//span[@title="{group}"]')))
+    print(f"Attempting to find group: '{repr(group.strip())}'")
+
+    wait = WebDriverWait(browser, 20)  
+    group_element = wait.until(EC.presence_of_element_located((By.XPATH, f'//span[contains(text(), "{group.strip()}")]')))
     group_element.click()
 
     time.sleep(1)
