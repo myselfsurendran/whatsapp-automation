@@ -48,7 +48,7 @@ def process_and_send_data():
             df_tamil = pd.read_excel(DATA_FILE_PATH_TAMIL)
             print(group)
 
-            if group == 'Zi Tours - English - Test':
+            if group == 'Zi Tours English - Testing':
                 place_data = df_english[df_english.iloc[:, 0] == place_name].iloc[:, 1].iloc[0]
             else:
                 place_data = df_tamil[df_tamil.iloc[:, 0] == place_name].iloc[:, 1].iloc[0]
