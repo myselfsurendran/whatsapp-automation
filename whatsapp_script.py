@@ -113,7 +113,12 @@ for group in groups:
     actions.move_to_element(input_box).click().perform()
     time.sleep(2)
 
-    browser.execute_cdp_cmd('Input.insertText', {'text': msg})
+    #browser.execute_cdp_cmd('Input.insertText', {'text': msg})
+    lines = msg.split('\n')
+    for line in lines:
+        browser.execute_cdp_cmd('Input.insertText', {'text': line})
+        browser.execute_cdp_cmd('Input.insertText', {'text': '\n'})
+        time.sleep(0.2)
 
     time.sleep(2)
     try:
